@@ -1,0 +1,14 @@
+---
+applications:
+- name: anynines-rails-beta
+  memory: 256M
+  instances: 2
+  host: anynines-rails-beta
+  domain: de.a9sapp.eu
+  path: "."
+  services:
+    postgresql-4fbcd:
+      label: postgresql
+      provider: core
+      version: '9.1'
+      plan: Pluto-free
